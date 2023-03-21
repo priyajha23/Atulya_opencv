@@ -140,12 +140,9 @@ img[pinkbound[0]:pinkbound[1],pinkbound[2]:pinkbound[3]]=id4
 img[greenbound[0]:greenbound[1],greenbound[2]:greenbound[3]]=id1
 img[orangebound[0]:orangebound[1],orangebound[2]:orangebound[3]]=id2
 
-"""this next bit of code is to bring back the other shapes to their original shape,as they had been ruined by the white borders of the aruco markers.
 
-(the coordinates have been found using ms paint as I realized this method to correct the deformations almost at the last minute. 
- Had I realised it sooner, I would have done the same using the methods available in opencv)
  
- """
+ 
 img[504:713,976:1248]=imgcopy[504:713,976:1248]
 img[486:874,83:273]=imgcopy[486:874,83:273]
 img[1030:1158,123:455]=imgcopy[1030:1158,123:455]
